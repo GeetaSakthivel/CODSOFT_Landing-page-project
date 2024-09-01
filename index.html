@@ -6,10 +6,11 @@
     <link rel="stylesheet" href="style.css">
    
 </head>
-<body background="background image.jpg">
+<body>
      <!-- Navbar Section -->
+      <header>
         <nav>
-            <label class="logo">UniqueyoU</label>
+            <label  for="title" class="logo">UniqueyoU</label>
             <ul>
                 <li><a class="active" href="#home">Home</a></li>
                 <li><a class="active" href="#about">About</a></li>
@@ -17,17 +18,78 @@
                 <li><a class="active" href="#contact">Contact Us</a></li>
             </ul>
         </nav>
+      </header>
         <!--Hero section -->
         <section class="hero-section">
             <div class="hero-content">
-            <h4>Welcome to UniqueyoU salon</h4>
-            <h1>Embrace your Skin & hair</h1>
-            <p>The highly-talented professionals of our salon are certified and have significant experience,which 
+            <h3 class="hero-heading">Welcome to UniqueyoU salon</h3>
+            <h1 class="main-title">Embrace your Skin & Hair</h1>
+            <p class="hero-desc">The highly-talented professionals of our salon are certified and have significant experience,which 
                 ensures high-quality performance which satisifies your needs by our services.
             </p>
-            <Button class="hero-btn">BOOK NOW</Button>
+            <a href="#" class="hero-btn">BOOK NOW</a>
             </div>
         </section>
+         <!-- About Section -->
+        <section id="about" class="about-section">
+        <div class="about-content">
+            <h2>About Us</h2>
+            <p> With over 15 years of experience in the beauty industry, we have been dedicated to helping our clients look and feel their best. Our salon is a sanctuary where relaxation and rejuvenation come together, offering a personalized experience for each of our clients.
+                <br>
+                Our team of expert stylists, estheticians, and therapists are passionate about delivering exceptional service, using the latest techniques and top-of-the-line products to achieve stunning results. Whether you're looking for a fresh haircut, a soothing facial, or a complete makeover, we tailor our services to meet your individual needs and preferences.</p>
+            <a href="#" class="btn">Read More</a>
+        </div>
+        <div class="about-image">
+           <img src="/about.jpg" alt="About us image" width="500px" height="500px">
+        </div>
+        </section>
+         <!--Services Section -->
+        <section id="services" class="our-services">
+        <h2>Our Services</h2>
+        <div class="services-list">
+            <div class="service-item">
+                <img src="/service1.jpg" alt="service 1">
+                <h4>Hair Styling</h4>
+                <p>Latest trends in hair styling and coloring.</p>
+            </div>
+            <div class="service-item">
+                <img src="/service2.jpg" alt="service 2">
+                <h4>Facial Treatments</h4>
+                <p>Custom facial treatments for glowing skin.</p>
+            </div>
+            <div class="service-item">
+                <img src="/service3.jpg" alt="service 3">
+                <h4>Spa Services</h4>
+                <p>Relaxing spa treatments to rejuvenate your body.</p>
+            </div>
+        </div>
+    </section>
+    <section id="contact" class="contact-form">
+        <h2>Contact Us</h2>
+        <form action="#" method="POST">
+        <label for="Name">Name*</label>
+        <input type="text" placeholder="Enter Your Name" id="name">
+        <label for="mobile no">Mobile Number*</label>
+        <input type="number" placeholder="Enter your Mobile number" id="mobile" pattern="[0-9]{10}" >
+        <label for="email">Email*</label>
+        <input type="email" placeholder="Enter Your email" id="email">
+        <label for="Enquiry">Enquiry About*</label>
+        <input type="text" id="enquiry">
+        <label for="message">Send Message: (optional)</label>
+        <textarea name="message" rows="5" placeholder="Your Message"></textarea>
+        <button type="submit">Submit</button>
+
+    </form> 
+
+
+    </section>
+     <!-- Footer Section -->
+     <footer>
+        <div class="footer-content">
+            <p>&copy; 2024 UniqueU|All rights reserved.</p>
+        </div>
+    </footer>
+
       
 </body>
 </html>

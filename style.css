@@ -16,6 +16,7 @@ nav{
 }
 label.logo{
     color: white;
+    text-shadow: 3px 5px rgb(222, 135, 48);
     font-size: 35px;
     line-height: 80px;
     padding: 0 50px;
@@ -127,6 +128,10 @@ a .active,a:hover{
     font-size: 2.5em;
     margin-bottom: 40px;
 }
+.our-services h4{
+    font-size: 1.5em;
+    color:rgb(148, 43, 5);  
+}
 
 .services-list {
     display: flex;
@@ -171,17 +176,15 @@ a .active,a:hover{
     color: rgb(75, 3, 3);
 }
 .contact-form input,
-.contact-form textarea {
+.contact-form textarea,.contact-form select {
     width: 70%;
     padding: 10px;
-    margin:0 0 10px 30px;
-    
+    margin:0 0 10px 30px;  
     border: 1px solid #ccc;
     border-radius: 5px;
     font-size: 1em;
     color: #333;
 }
-
 .contact-form button {
     width:30%;
     margin:2% 30% 1%;

@@ -3,8 +3,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width,initial-scale=1.0">
     <title>Landing Page</title>
-    <link rel="stylesheet" href="style.css">
-   
+    <link rel="stylesheet" href="style.css"> 
 </head>
 <body>
      <!-- Navbar Section -->
@@ -68,28 +67,27 @@
         <h2>Contact Us</h2>
         <form action="#" method="POST">
         <label for="Name">Name*</label>
-        <input type="text" placeholder="Enter Your Name" id="name">
+        <input type="text" placeholder="Enter Your Name" id="name" name="Name">
         <label for="mobile no">Mobile Number*</label>
-        <input type="number" placeholder="Enter your Mobile number" id="mobile" pattern="[0-9]{10}" >
+        <input type="number" placeholder="Enter your Mobile number" id="mobile" name="Mobileno" >
         <label for="email">Email*</label>
-        <input type="email" placeholder="Enter Your email" id="email">
+        <input type="email" placeholder="Enter Your email" id="email" name="Email">
         <label for="Enquiry">Enquiry About*</label>
-        <input type="text" id="enquiry">
+        <select id="enquiry" name="enquiry">
+            <option value="Facial treatments">Facial Treatments</option>
+            <option value="HairStyling">Hair Styling</option>
+            <option value="Body spa">Body Spa</option>
+        </select>
         <label for="message">Send Message: (optional)</label>
         <textarea name="message" rows="5" placeholder="Your Message"></textarea>
         <button type="submit">Submit</button>
-
     </form> 
-
-
     </section>
      <!-- Footer Section -->
      <footer>
         <div class="footer-content">
             <p>&copy; 2024 UniqueU|All rights reserved.</p>
         </div>
-    </footer>
-
-      
+    </footer>     
 </body>
 </html>
